@@ -16,7 +16,7 @@ function targetTerdekat(arr) {
         } else if(arr[i]=='x'){
             tmp2.push(i)
 
-        } else if(arr[i]==" "){
+        } else if(arr[i]==' '){
             continue
         } 
  
@@ -41,8 +41,8 @@ function targetTerdekat(arr) {
     
     
     
-   // console.log(`o: ${tmp1}`)
-    //console.log(`x: ${minimumX}`)
+    //console.log(`o: ${tmp1}`)
+   //console.log(`x: ${minimumX}`)
     
     if(minimumX==null){
         tmp1 = 0
