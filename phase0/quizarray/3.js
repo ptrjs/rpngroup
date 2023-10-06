@@ -4,25 +4,27 @@ fungsi ini akan me-return array 2 dimensi
 */
 function groupAnimals(animals) {
 
-    let groupA = []
-    let groupC = []
-    let groupK = []
-    let groupU = []
-
+    let groups = []
     for(let i = 0 ; i < animals.length; i++){
-        if(animals[i][0]=='a'){
-            groupA.push(animals[i])   
-        }else if(animals[i][0]=='c'){
-            groupC.push(animals[i])   
-        }else if(animals[i][0]=='k'){
-            groupK.push(animals[i])   
-        }else if(animals[i][0]=='u'){
-            groupU.push(animals[i])   
+        let isThere = false
+        let firstChar = animals[i][0]
+
+        for (let j = 0; j < groups.length; j++) {
+            if (groups[j][0][0] === firstChar) {
+                groups[j].push(animals[i]);
+                isThere = true        
+            }
+        }
+        
+        if(!isThere){
+            groups.push([animals[i]])
         }
        
     }
 
-    return [groupA, groupC, groupK, groupU]
+    return groups
+
+    
 }
   
   
