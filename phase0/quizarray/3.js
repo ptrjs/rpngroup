@@ -10,6 +10,7 @@ function groupAnimals(animals) {
         let firstChar = animals[i][0]
 
         for (let j = 0; j < groups.length; j++) {
+           
             if (groups[j][0][0] === firstChar) {
                 groups[j].push(animals[i]);
                 isThere = true        
