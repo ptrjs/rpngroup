@@ -8,13 +8,19 @@ function ubahHuruf(kata) {
        
        for(let j = 0 ; j < alphabet.length; j++){
             if(kata[i]===alphabet[j]){
-                crypt.push(alphabet[j+1])
+                if(alphabet[j]==='z'){
+                  crypt.push('a')  
+                }else{
+
+                    crypt.push(alphabet[j+1])
+                }
             }
        }
        
     }
     let word = ""
     for(let i = 0 ; i < crypt.length; i++){
+        
         word+=crypt[i]
     }
 
@@ -29,3 +35,4 @@ function ubahHuruf(kata) {
  console.log(ubahHuruf('javascript')); // kbwbtdsjqu
  console.log(ubahHuruf('keren')); // lfsfo
  console.log(ubahHuruf('semangat')); // tfnbohbu
+ console.log(ubahHuruf('zebra')); 

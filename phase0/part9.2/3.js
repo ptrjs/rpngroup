@@ -7,7 +7,7 @@ function cariMedian(arr) {
 
     let median = 0
    
-    for(let i = 0 ; i < sort.length; i++){
+ 
         if(sort.length % 2 != 0){
             
             median = sort[(sort.length-1)/2]
@@ -18,7 +18,7 @@ function cariMedian(arr) {
             //console.log(median)
         }
         
-    }
+  
     return median
     
 
