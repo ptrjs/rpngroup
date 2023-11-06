@@ -51,6 +51,10 @@ NOTE:
 function squareNumber(num) {
     //code here
   
+    if(num<3){
+        return 'Minimal input adalah 3'
+  
+    }
  
     let counter = 0;
     let resNum = [];
@@ -132,7 +136,7 @@ function squareNumber(num) {
   //   [ #, x, o, x, # ],
   //   [ x, o, x, #, o ] ]
   
-//  console.log(squareNumber(2)); // Minimal input adalah 3
+  console.log(squareNumber(2)); // Minimal input adalah 3
   
   
   
